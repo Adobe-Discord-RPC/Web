@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 사이트 정체성 메타 -->
+    <meta charset="UTF-8">
+    <title>Adobe Discord RPC - Main</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color" content="#C5CAE9">
+
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/57_57_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/60_60_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/72_72_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/76_76_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/114_114_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/120_120_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/144_144_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/152_152_icon_alpha.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/180_180_icon_alpha.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/192_192_icon_alpha.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/32_32_icon_alpha.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/96_96_icon_alpha.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/16_16_icon_alpha.png">
+
+    <!-- 사이트 정체성 -->
+    <meta name="title" content="Adobe Discord RPC" class="meta-title">
+    <meta name="description" content="Discord RPC in Adobe Programs." class="meta-desc">
+    <!--<meta name="keywords" content="">-->
+    <meta name="apple-mobile-web-app-title" content="Adobe Discord RPC">
+    <link rel="image_src" href="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/192_192_icon_alpha.png"> <!-- 192X192 -->
+
+    <!-- SNS -->
+      <!-- 페이스북 & 디스코드 -->
+      <meta property="og:site_name" content="Adobe Discord RPC" class="meta-title">
+      <meta property="og:title" content="Adobe Discord RPC" class="meta-title">
+      <meta property="og:description" content="Discord RPC in Adobe Programs." class="meta-desc">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="KR">
+      <meta property="og:url" content="http://adoberpc.hwahyang.space">
+      <meta property="og:image" content="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/200_200_icon_alpha.png">
+      <meta property="og:image:width" content="200">
+      <meta property="og:image:height" content="200">
+
+      <!-- 트위터 -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:title" content="Adobe Discord RPC" class="meta-title">
+      <meta name="twitter:description" content="Discord RPC in Adobe Programs." class="meta-desc">
+      <meta name="twitter:url" content="http://adoberpc.hwahyang.space">
+      <meta name="twitter:image" content="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/200_200_icon_alpha.png"> <!-- 200X200 -->
+
+      <!-- MS -->
+      <meta name="msapplication-TileColor" content="#C5CAE9">
+      <meta name="msapplication-TileImage" content="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/144_144_icon_alpha.png"> <!-- 144X144 -->
+    <!-- //SNS -->
+
+    <!-- 자동 태깅 방지 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./plugins/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plugins/slick-1.8.1/slick.css">
+    <link rel="stylesheet" href="./plugins/meanmenu/meanmenu.css">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/ep-font.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css">
+    <style>
+        @font-face {
+            font-family: 'NanumSquareL';
+            src: url('./fonts/NanumSquare/NanumSquareL.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'NanumSquareR';
+            src: url('./fonts/NanumSquare/NanumSquareR.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'NanumSquareB';
+            src: url('./fonts/NanumSquare/NanumSquareB.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'NanumSquareEB';
+            src: url('./fonts/NanumSquare/NanumSquareEB.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'NanumSquareRoundL';
+            src: url('./fonts/NanumSquare/NanumSquareRoundL.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'NanumSquareRoundR';
+            src: url('./fonts/NanumSquare/NanumSquareRoundR.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'NanumSquareRoundB';
+            src: url('./fonts/NanumSquare/NanumSquareRoundB.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'NanumSquareRoundEB';
+            src: url('./fonts/NanumSquare/NanumSquareRoundEB.ttf') format('truetype');
+        }
+        
+        body {
+            font-family: NanumSquareRoundR;
+        }
+    </style>
+
+    <!-- Google Analytics - gtag.js -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165040590-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-165040590-4');
+    </script>
+</head>
+
+<body>
+
+    <div class="landing-wrapper">
+
+            <header class="site-header">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center position-relative">
+                            <div class="col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1">
+                                <div class="brand">
+                                    <!--<a href=""><img src="image/main-logo.png" alt="" /></a>-->
+                                    <img src="./favicon/32_32_icon_alpha.png" alt="Logo" />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
+                                <div class="header-btns" id="download-nav">
+                                    <!--<div class="btn-1 btn-outlined">
+                                        <a href="#">Login</a>
+                                    </div>-->
+                                    <div class="btn-2-disabled">
+                                        <a href="#">지원하지 않는 OS</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2">
+                                <div class="main-navigation">
+                                    <ul class="main-menu">
+                                        <li class="menu-item">
+                                            <a href="./v1">기존 홈페이지</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="javascript:void(0);" OnClick="OpenSupportPrograms();">지원 프로그램 목록</a>
+                                        </li>
+                                        <!--<li class="menu-item">
+                                            <a href="mailto:me@hwahyang.space">이메일</a>
+                                        </li>-->
+                                        <li class="menu-item">
+                                            <a href="http://github.com/hwahyang1/Adobe-Discord-RPC/">깃허브</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="http://www.facebook.com/adobediscordrpc/">페이스북</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="http://twitter.com/adobediscordrpc">트위터</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-menu"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </header>
+
+        <div class="hero-area pt-4 pt-lg-5">
+            <div class="float-shapes">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center justify-content-lg-start">
+                    <div class="col-md-8 col-lg-7 offset-lg-2">
+                        <h1 class="main-title" style="word-break: keep-all;">Discord RPC in Adobe Programs.</h1>
+                    </div>
+                    <div class="col-md-8 col-lg-6 offset-lg-2">
+                        <div class="hero-content-wrapper">
+                            <div class="main-content">
+                                <p style="word-break: keep-all;">별도의 설정을 하지 않아도 어도비 계열 프로그램을 실행시키면 자동으로 Discord RPC를 적용 해 줍니다.</p>
+                            </div>
+                            <div class="compatible">
+                                <span>지원하는 OS :</span>
+                                <ul class="compatible-list">
+                                    <li class="list-item"><img src="./image/OS_icon/compatible-1.png" alt="Windows Icon" /></li>
+                                    <!--<li class="list-item"><img src="./image/OS_icon/compatible-2.png" alt="Apple Icon"></li>
+                                    <li class="list-item"><img src="./image/OS_icon/compatible-3.png" alt="Linux Icon"></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-lg-5">
+                        <div class="hero-btn" id="download-cover">
+                            <a href="#" class="btn btn--disabled btn-height-60">지원하지 않는 OS</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="hero-img" id="example-fadeshow">
+                            <img src="./image/Slides/Discord-0.png" alt="Discord RPC Sample Image 00" />
+                            <img src="./image/Slides/Discord-1.png" alt="Discord RPC Sample Image 01" />
+                            <img src="./image/Slides/Discord-2.png" alt="Discord RPC Sample Image 02" />
+                            <img src="./image/Slides/Discord-3.png" alt="Discord RPC Sample Image 03" />
+                            <img src="./image/Slides/Discord-4.png" alt="Discord RPC Sample Image 04" />
+                            <img src="./image/Slides/Discord-5.png" alt="Discord RPC Sample Image 05" />
+                            <img src="./image/Slides/Discord-6.png" alt="Discord RPC Sample Image 06" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Client-Section -->
+        <!--
+        <section class="client-section">
+            <div class="container">
+                <div class="client-brand-wrapper">
+                    <div class="single-brand">
+                        <img src="image/logo-5.png" alt=""/>
+                    </div>
+                
+                    <div class="single-brand">
+                        <img src="image/logo-4.png" alt="">
+                    </div>
+                
+                    <div class="single-brand">
+                        <img src="image/logo-3.png" alt="">
+                    </div>
+                
+                    <div class="single-brand">
+                        <img src="image/logo-2.png" alt="">
+                    </div>
+                
+                    <div class="single-brand">
+                        <img src="image/logo-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Content Area 01-->
+        <!--<section class="content-section-01">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5  col-md-6 col-sm-8">
+                        <div class="content-image">
+                            <img src="./image/content-image-1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1 col-md-6">
+                        <div class="content-right-content">
+                            <h2>Build Beautiful
+                                Landing Pages Faster.</h2>
+                            <p>
+                                Create custom landing pages with Shades that convert more visitors than any website, no
+                                coding required.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Content Area 02 -->
+        <!--<section class="content-section-02">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-6 col-sm-10 col-md-6 col-10 order-md-2 offset-xl-1 d-none d-md-block">
+                        <div class="content-image">
+                            <img src="./image/content-image-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-sm-12 col-md-6 order-md-1">
+                        <div class="content-text content-left-content">
+                            <h2>Completely Free for Everyone.</h2>
+                            <div class="content-small-card">
+                                <div class="card-icon">
+                                    <i class="icon icon-users-mm-2"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>Built for real users</h5>
+                                    <p>
+                                        Editing and customizing Essential Landing is easy and fast.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-small-card">
+                                <div class="card-icon">
+                                    <i class="icon icon-settings"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>Easy setup process</h5>
+                                    <p>
+                                        Editing and customizing Essential Landing is easy and fast.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Content Area -->
+        <!--<section class="content-section-03">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-sm-6 col-md-6 col-10 d-none d-md-block">
+                        <div class="content-img">
+                            <img src="./image/content-image-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6 offset-xl-1 col-sm-12">
+                        <div class="content-right-content">
+                            <h2>Never miss a thing</h2>
+                            <p>
+                                Event is not like most tech conferences. We want our presentations to engage the
+                                audience, spark discussion and inspire new ideas.
+                            </p>
+                            <ul class="content-list">
+                                <li>
+                                    <span><i class="icon icon-check-2"></i></span>Unlimited design
+                                    possibility
+                                </li>
+                                <li>
+                                    <span><i class="icon icon-check-2"></i></span>Completely
+                                    responsive
+                                </li>
+                                <li>
+                                    <span><i class="icon icon-check-2"></i></span>Easy to
+                                    customize
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Feature Area-->
+        <section class="feature-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h2 style="word-break: keep-all;">수많은 기능을 제공하고 있습니다.</h2>
+                            <p style="word-break: keep-all;">Adobe Discord RPC에서 제공하고 있는 기능들을 살펴보세요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row mb-d-30">
+                            <div class="col-sm-6 mb--30">
+                                <div class="feature-widget">
+                                    <div class="widget-icon">
+                                        <i class="icon icon-l-settings"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5 style="word-break: keep-all;">간단한 실행</h5>
+                                        <p style="word-break: keep-all;">그 어느 설정도 필요하지 않습니다.<br>그저 어도비 계열 프로그램과 디스코드만 켜놓으면 됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb--30">
+                                <div class="feature-widget">
+                                    <div class="widget-icon">
+                                        <i class="icon icon-layers-3"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5 style="word-break: keep-all;">폭넓은 지원</h5>
+                                        <p style="word-break: keep-all;">어도비 계열 프로그램이 아니더라도 개발자에게 프로그램 추가 건의만 하면 내부 검토 후 지원하는 프로그램으로 추가됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb--30">
+                                <div class="feature-widget">
+                                    <div class="widget-icon">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5 style="word-break: keep-all;">오픈소스 프로젝트</h5>
+                                        <p style="word-break: keep-all;">Adobe Discord RPC는 오픈소스 프로젝트입니다.<br>누구나 언제든지 소스코드를 확인하고, 수정 제안을 할 수 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-sm-6 mb--30">
+                                <div class="feature-widget">
+                                    <div class="widget-icon">
+                                        <i class="icon icon-tablet-mobile"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>100% Responsive</h5>
+                                        <p>Whether it’s a small internal app or a new for millions of customers, our
+                                            design
+                                            and development teams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb--30">
+                                <div class="feature-widget">
+                                    <div class="widget-icon">
+                                        <i class="icon icon-book-open-2"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Rich Documentation</h5>
+                                        <p>Whether it’s a small internal app or a new for millions of customers, our
+                                            design
+                                            and development teams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb--30">
+                                <div class="feature-widget">
+                                    <div class="widget-icon">
+                                        <i class="icon icon-edit-72"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Quick Setup</h5>
+                                        <p>Whether it’s a small internal app or a new for millions of customers, our
+                                            design
+                                            and development teams.</p>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Area -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h2 style="word-break: keep-all;">150명 이상이 사용하고 있습니다.</h2>
+                            <p style="word-break: keep-all;">이곳에서 프로젝트 참여자와 유저들의 의견을 들어보세요.<br>이곳에 본인의 이야기를 담고 싶으신가요? SNS를 통해 문의 해 주세요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slider-wrapper">
+                    <div class="row justify-content-center position-relative">
+                        <div class="col-lg-10 ">
+                            <div class="testimonial-slider">
+                                <div class="single-slide">
+                                    <div class="testimonial-content">
+                                        <p style="word-break: keep-all;">
+                                            "2020년 3월 17일, '무언가를 만들고 싶다'라는 단순한 욕구에서 시작된 프로젝트에 이렇게 많은 분들께서 관심을 가져주실 줄은 몰랐습니다.<br>
+                                            다가올 4.0버전은 틸토님과 함께 작업하여 Node.js로 언어를 변경 할 계획입니다."
+                                        </p>
+                                        <div class="t-small-card">
+                                            <div class="image">
+                                                <img src="./image/Profiles/HwaHyang_14_Fixed.png" alt="화향 프로필 이미지">
+                                            </div>
+                                            <div class="content">
+                                                <h5>화향</h5>
+                                                <span>프로젝트 리더</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-slide">
+                                    <div class="testimonial-content">
+                                        <p style="word-break: keep-all;">
+                                            "처음에 화향님이 '나 이거 만들었다'라고 했을 땐 그저 '오 신기해'하고선 말았던 건데, 정신을 차려보니 끌려와서 제가 직접 만들고 있더군요 (...)<br>
+                                            모쪼록 오랜만에 재밌게 열정가득 만든 Adobe Discord RPC 많이많이 애용해주시고, 화향님하고 저 틸토도 기억해주세요 (_ _)"
+                                        </p>
+                                        <div class="t-small-card">
+                                            <div class="image">
+                                                <img src="./image/Profiles/Tilto_Fixed.png" alt="틸토 프로필 이미지">
+                                            </div>
+                                            <div class="content">
+                                                <h5>틸토</h5>
+                                                <span>프로젝트 개발 및 디자인</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="single-slide">
+                                    <div class="testimonial-content">
+                                        <p style="word-break: keep-all;">
+                                            “It’s really helped us grow. I can keep all of the customer’s information in
+                                            there so if I need to look up something in the future or call them for a
+                                            follow-up, I have all of that there so it’s really helped us organize the
+                                            whole business.”
+                                        </p>
+                                        <div class="t-small-card">
+                                            <div class="image">
+                                                <img src="./image/Profiles/t3-nav-1.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5>Sallie Lawson</h5>
+                                                <span>Owner of Crips</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </div>
+                        <div class="slider-btns"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cta Section -->
+        <!--
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-inner-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="cta-content">
+                                <span class="title-small-text">Ready to take action?</span>
+                                <h2>Try our free software!</h2>
+                                <p>We designed and tested prototypes that helped identify pain points in the account
+                                    creation process. Together, we shaped the new standard.</p>
+                                <div class="cta-btn">
+                                    <a href="" class="btn btn-outlined--white btn-with-icon btn-height-60">
+                                        <i class="icon icon-cloud-download-95"></i> Download Now</a>
+                                    <p class="extra-info-text">No credit card required</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section class="footer-section">
+            <div class="container">
+                <div class="row align-items-center text-center">
+                    <div class="col-lg-2 col-md-3 ">
+                        <div class="footer-logo">
+                            <img src="./image/title/WithIcon_Title.png" alt="Logo">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6  offset-lg-1">
+                        <ul class="nav footer-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./v1">기존 홈페이지</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0);" OnClick="OpenSupportPrograms();">지원 프로그램 목록</a>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link" href="mailto:me@hwahyang.space">이메일</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://github.com/hwahyang1/Adobe-Discord-RPC/">깃허브</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.facebook.com/adobediscordrpc/">페이스북</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://twitter.com/adobediscordrpc">트위터</a>
+                            </li>-->
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-3 offset-lg-1">
+                        <ul class="footer-social-list">
+                            <li>
+                                <a href="mailto:me@hwahyang.space">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.facebook.com/adobediscordrpc/">
+                                    <i class="icon icon-logo-fb-simple"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/adobediscordrpc">
+                                    <i class="icon icon-logo-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://github.com/hwahyang1/Adobe-Discord-RPC/">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="copyright">
+                    <p style="word-break: keep-all;">©2020 Adobe Discord RPC. All right reserved.<br>해당 프로젝트는 오픈소스 프로젝트이며, Discord. Inc, Adobe를 포함한 모든 기업과는 별개의 서드파티 플러그인임을 알립니다.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+        <!-- Vendor JS-->
+        <script src="./plugins/jquery/jquery.min.js"></script>
+        <script src="./plugins/jquery/jquery-migrate.min.js"></script>
+        <script src="./plugins/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugins JS -->
+        <script src="./plugins/slick-1.8.1/slick.min.js"></script>
+        <script src="./plugins/meanmenu/jquery.meanmenu.js"></script>
+        <script src="./js/active.js"></script>
+
+        <!-- Custom JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+        <script src="./plugins/jquery.cycle2.min.js"></script>
+        <script>
+            $('#example-fadeshow').cycle({
+                speed: 500,
+                timeout: 2500,
+                random: false
+            });
+
+            if ( navigator.platform ) {
+                if ( navigator.platform.indexOf('Win') > -1 ) { // 윈도
+                    $("#download-nav").html('<div class="btn-2"><a href="javascript:void(0);" OnClick="OpenWindowsGuide();">Windows 다운로드</a></div>');
+                    $("#download-cover").html('<a class="btn btn--primary btn-height-60" href="javascript:void(0);" OnClick="OpenWindowsGuide();">Windows 다운로드</a>');
+                } else {
+                    $("#download-nav").html('<div class="btn-2-disabled"><a href="javascript:void(0);">지원하지 않는 OS</a></div>');
+                    $("#download-cover").html('<a href="javascript:void(0);" class="btn btn--disabled btn-height-60">지원하지 않는 OS</a>');
+                }
+            }
+
+            function OpenWindowsGuide() {
+                Swal.mixin({
+                    confirmButtonText: '다음 단계 &rarr;',
+                    showCancelButton: false,
+                    progressSteps: ['1', '2', '3', '4']
+                    }).queue([
+                    {
+                        title: '설치 프로그램 다운로드',
+                        html: `
+                            <p style="word-break: keep-all;"><a style="color: #20A6E7;" href="http://github.com/hwahyang1/Adobe-Discord-RPC/releases" target="_blank">Github Releases</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
+                            <p style="word-break: keep-all;">Github 다운 속도가 느릴 경우, <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>를 사용 할 수 있습니다.</p>
+                            <p style="word-break: keep-all;"><b>파일을 다운 받은 뒤에 아래의 버튼을 누릅니다.</b></p>`
+                    },
+                    {
+                        title: '설치 과정 진행',
+                        html: `
+                            <p style="word-break: keep-all;">다운 받은 설치파일을 실행하여 설치 과정을 진행합니다.</p>
+                            <p style="word-break: keep-all;"><b>설치가 끝나면 아래의 버튼을 누릅니다.</b></p>`
+                    },
+                    {
+                        title: '프로그램 실행',
+                        html: `
+                            <p style="word-break: keep-all;">바탕화면에 생성된 'Adobe Discord RPC 실행' 바로가기를 더블 클릭하여 프로그램을 실행시킵니다.</p>
+                            <p style="word-break: keep-all;"><b>바로가기를 실행하면 아래의 버튼을 누릅니다.</b></p>`
+                    },
+                    {
+                        title: '시작 프로그램 관련 안내',
+                        html: `
+                            <p style="word-break: keep-all;">해당 프로그램은 "시작 프로그램"에 등록되어, Windows 시작과 함께 가동됩니다.</p>
+                            <p style="word-break: keep-all;">이를 원치 않으시면, Win + R키를 눌러 shell:startup을 입력하신 다음, Run Adobe Discord RPC 바로가기를 삭제하시면 됩니다.</p>
+                            <p style="word-break: keep-all;"><b>해당 내용을 숙지 한 후, 아래의 버튼을 누릅니다.</b></p>`
+                    }
+                    ]).then((result) => {
+                    if (result.value) {
+                        const answers = JSON.stringify(result.value)
+                        Swal.fire({
+                            icon: 'success',
+                            title: '모든 과정이 끝났습니다!',
+                            html: '<p style="word-break: keep-all;">이제 Adobe Discord RPC가 지원하는 프로그램을 실행시키면 RPC가 적용됩니다.</p>',
+                            confirmButtonText: '닫기'
+                        });
+                    }
+                });
+
+            }
+
+            function OpenSupportPrograms() {
+                Swal.fire({
+                icon: 'info',
+                title: '<h2 style="word-break: keep-all;">Adobe Discord RPC 지원 프로그램 목록</h2>',
+                html: `
+                    <p style="word-break: keep-all;"><b>어도비 계열 프로그램은 CC 2014 버전부터 지원합니다.</b></p>
+                    <p style="word-break: keep-all;"><b>이외 프로그램 (C4D, Blender 등)은 이론상 모든 버전을 지원하나, 가급적 최신 버전 사용을 권장드립니다.</b></p>
+                    <img src="./image/Support_Program_Chart.png" alt="지원 프로그램 목록 이미지" />`,
+                showCloseButton: true,
+                focusConfirm: false
+                });
+
+            }
+        </script>
+    <!-- //JS -->
+
+</body>
+
+</html>
