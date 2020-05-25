@@ -6991,7 +6991,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     }
 
     hiddenDiv.text($textarea[0].value + '\n');
-    var content = hiddenDiv.html().replace(/\n/g, '<br>');
+    var content = hiddenDiv.html().replace(/\n/g, '<br />');
     hiddenDiv.html(content);
 
     // When textarea is hidden, width goes crazy.
