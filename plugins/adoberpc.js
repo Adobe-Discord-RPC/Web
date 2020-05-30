@@ -278,38 +278,38 @@ function ConfirmLangChange(lang) {
 }
 
 function OpenWindowsGuide() {
-    lang = Input_Lang_Change(ReturnCurrentLang());
+    let OWG_lang = Input_Lang_Change(ReturnCurrentLang());
 
     Swal.mixin({
-        confirmButtonText: lang['SweetAlert2']['DownloadWindows']['NextButton'],
+        confirmButtonText: OWG_lang['SweetAlert2']['DownloadWindows']['NextButton'],
         showCancelButton: false,
         focusConfirm: false,
         progressSteps: ['1', '2', '3', '4']
     }).queue([
         {
-            title: lang['SweetAlert2']['DownloadWindows']['Pages'][0]['Title'],
-            html: lang['SweetAlert2']['DownloadWindows']['Pages'][0]['HTML']
+            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][0]['Title'],
+            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][0]['HTML']
         },
         {
-            title: lang['SweetAlert2']['DownloadWindows']['Pages'][1]['Title'],
-            html: lang['SweetAlert2']['DownloadWindows']['Pages'][1]['HTML']
+            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][1]['Title'],
+            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][1]['HTML']
         },
         {
-            title: lang['SweetAlert2']['DownloadWindows']['Pages'][2]['Title'],
-            html: lang['SweetAlert2']['DownloadWindows']['Pages'][2]['HTML']
+            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][2]['Title'],
+            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][2]['HTML']
         },
         {
-            title: lang['SweetAlert2']['DownloadWindows']['Pages'][3]['Title'],
-            html: lang['SweetAlert2']['DownloadWindows']['Pages'][3]['HTML']
+            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][3]['Title'],
+            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][3]['HTML']
         }
     ]).then((result) => {
         if (result.value) {
-            const answers = JSON.stringify(result.value)
+            const answers = JSON.stringify(result.value);
             Swal.fire({
                 icon: 'success',
-                title: lang['SweetAlert2']['DownloadWindows']['FinalPage']['Title'],
-                html: lang['SweetAlert2']['DownloadWindows']['FinalPage']['HTML'],
-                confirmButtonText: lang['SweetAlert2']['DownloadWindows']['FinalPage']['CloseButton']
+                title: OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['Title'],
+                html: OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['HTML'],
+                confirmButtonText: OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['CloseButton']
             });
         }
     });
@@ -317,12 +317,12 @@ function OpenWindowsGuide() {
 }
 
 function OpenSupportPrograms() {
-    lang = Input_Lang_Change(ReturnCurrentLang());
+    let OSP_lang = Input_Lang_Change(ReturnCurrentLang());
 
     Swal.fire({
         icon: 'info',
-        title: lang['SweetAlert2']['SupportPrograms']['Title'],
-        html: lang['SweetAlert2']['SupportPrograms']['HTML'],
+        title: OSP_lang['SweetAlert2']['SupportPrograms']['Title'],
+        html: OSP_lang['SweetAlert2']['SupportPrograms']['HTML'],
         showCloseButton: true,
         focusConfirm: false
     });
