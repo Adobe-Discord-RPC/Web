@@ -226,90 +226,90 @@ function Input_Lang_Change(userlang) {
 
 function ConfirmLangChange(lang) {
     /* Header Nav */
-    document.getElementById("HD_Previous_HP").innerHTML = `<a href="./v1">${lang['HeaderNav']['PastHome']}</a>`;
-    document.getElementById("HD_Supporting_PG").innerHTML = `<a href="javascript:void(0);" OnClick="OpenSupportPrograms();">${lang['HeaderNav']['SupportPrograms']}</a>`;
-    document.getElementById("HD_Github").innerHTML = `<a href="http://github.com/Adobe-Discord-RPC/">${lang['HeaderNav']['Github']}</a>`;
-    document.getElementById("HD_Facebook").innerHTML = `<a href="http://www.facebook.com/adobediscordrpc/">${lang['HeaderNav']['Facebook']}</a>`;
-    document.getElementById("HD_Twitter").innerHTML = `<a href="http://twitter.com/adobediscordrpc">${lang['HeaderNav']['Twitter']}</a>`;
-    $("#download-nav").html(`<div class="btn-2">${lang['HeaderNav']['Lang_Change']}</div>`);
+    document.getElementById("HD_Previous_HP").innerHTML = `<a href="./v1">${encode(lang['HeaderNav']['PastHome'])}</a>`;
+    document.getElementById("HD_Supporting_PG").innerHTML = `<a href="javascript:void(0);" OnClick="OpenSupportPrograms();">${encode(lang['HeaderNav']['SupportPrograms'])}</a>`;
+    document.getElementById("HD_Github").innerHTML = `<a href="http://github.com/Adobe-Discord-RPC/">${encode(lang['HeaderNav']['Github'])}</a>`;
+    document.getElementById("HD_Facebook").innerHTML = `<a href="http://www.facebook.com/adobediscordrpc/">${encode(lang['HeaderNav']['Facebook'])}</a>`;
+    document.getElementById("HD_Twitter").innerHTML = `<a href="http://twitter.com/adobediscordrpc">${encode(lang['HeaderNav']['Twitter'])}</a>`;
+    $("#download-nav").html(`<div class="btn-2">${encode(lang['HeaderNav']['Lang_Change'])}</div>`);
         /* Download Button */
         if ( navigator.platform ) {
             if ( navigator.platform.indexOf('Win') > -1 ) { // 윈도
-                $("#download-cover").html(`<a class="btn btn--primary btn-height-60" href="javascript:void(0);" OnClick="OpenWindowsGuide();">${lang['DownloadButton']['Windows']}</a>`);
+                $("#download-cover").html(`<a class="btn btn--primary btn-height-60" href="javascript:void(0);" OnClick="OpenWindowsGuide();">${encode(lang['DownloadButton']['Windows'])}</a>`);
             } else {
-                $("#download-cover").html(`<a href="javascript:void(0);" class="btn btn--disabled btn-height-60">${lang['DownloadButton']['Unsupported']}</a>`);
+                $("#download-cover").html(`<a href="javascript:void(0);" class="btn btn--disabled btn-height-60">${encode(lang['DownloadButton']['Unsupported'])}</a>`);
             }
         }
 
     /* Cover */
-    $("#CV_Title").html(`<h1 class="main-title" style="word-break: keep-all;" id="CV_Title">${lang['Cover']['Title']}</h1>`);
-    $("#CV_Des").html(`<p style="word-break: keep-all;">${lang['Cover']['Description']}</p>`);
-    document.getElementById("CV_Supporting_OS").innerHTML = lang['Cover']['SupportingOS'];
+    $("#CV_Title").html(`<h1 class="main-title" style="word-break: keep-all;" id="CV_Title">${encode(lang['Cover']['Title'])}</h1>`);
+    $("#CV_Des").html(`<p style="word-break: keep-all;">${encode(lang['Cover']['Description'])}</p>`);
+    document.getElementById("CV_Supporting_OS").innerHTML = encode(lang['Cover']['SupportingOS']);
 
     /* Feature */
-    document.getElementById("FT_Title").innerHTML = lang['Features']['Title'];
-    document.getElementById("FT_Des").innerHTML = lang['Features']['Description'];
+    document.getElementById("FT_Title").innerHTML = encode(lang['Features']['Title']);
+    document.getElementById("FT_Des").innerHTML = encode(lang['Features']['Description']);
         /* Feature Lists */
-        document.getElementById("FT_01_Title").innerHTML = lang['Features']['Lists'][0]['Title'];
-        document.getElementById("FT_01_Des").innerHTML = lang['Features']['Lists'][0]['Description'];
+        document.getElementById("FT_01_Title").innerHTML = encode(lang['Features']['Lists'][0]['Title']);
+        document.getElementById("FT_01_Des").innerHTML = encode(lang['Features']['Lists'][0]['Description']);
         //
-        document.getElementById("FT_02_Title").innerHTML = lang['Features']['Lists'][1]['Title'];
-        document.getElementById("FT_02_Des").innerHTML = lang['Features']['Lists'][1]['Description'];
+        document.getElementById("FT_02_Title").innerHTML = encode(lang['Features']['Lists'][1]['Title']);
+        document.getElementById("FT_02_Des").innerHTML = encode(lang['Features']['Lists'][1]['Description']);
         //
-        document.getElementById("FT_03_Title").innerHTML = lang['Features']['Lists'][2]['Title'];
-        document.getElementById("FT_03_Des").innerHTML = lang['Features']['Lists'][2]['Description'];
+        document.getElementById("FT_03_Title").innerHTML = encode(lang['Features']['Lists'][2]['Title']);
+        document.getElementById("FT_03_Des").innerHTML = encode(lang['Features']['Lists'][2]['Description']);
 
     /* Comments */
-    document.getElementById("CM_Title").innerHTML = lang['Comments']['Title'];
-    document.getElementById("CM_Des").innerHTML = lang['Comments']['Description'];
+    document.getElementById("CM_Title").innerHTML = encode(lang['Comments']['Title']);
+    document.getElementById("CM_Des").innerHTML = encode(lang['Comments']['Description']);
         /* Comments Lists */
-        document.getElementById("CM_01_CM").innerHTML = `"${lang['Comments']['Lists'][0]['Descriptions']}"`;
-        document.getElementById("CM_01_Title").innerHTML = lang['Comments']['Lists'][0]['AuthorName'];
-        document.getElementById("CM_01_ID").innerHTML = lang['Comments']['Lists'][0]['AuthorIndicator'];
+        document.getElementById("CM_01_CM").innerHTML = `"${encode(lang['Comments']['Lists'][0]['Descriptions'])}"`;
+        document.getElementById("CM_01_Title").innerHTML = encode(lang['Comments']['Lists'][0]['AuthorName']);
+        document.getElementById("CM_01_ID").innerHTML = encode(lang['Comments']['Lists'][0]['AuthorIndicator']);
         //
-        document.getElementById("CM_02_CM").innerHTML = `"${lang['Comments']['Lists'][1]['Descriptions']}"`;
-        document.getElementById("CM_02_Title").innerHTML = lang['Comments']['Lists'][1]['AuthorName'];
-        document.getElementById("CM_02_ID").innerHTML = lang['Comments']['Lists'][1]['AuthorIndicator'];
+        document.getElementById("CM_02_CM").innerHTML = `"${encode(lang['Comments']['Lists'][1]['Descriptions'])}"`;
+        document.getElementById("CM_02_Title").innerHTML = encode(lang['Comments']['Lists'][1]['AuthorName']);
+        document.getElementById("CM_02_ID").innerHTML = encode(lang['Comments']['Lists'][1]['AuthorIndicator']);
 
     /* Footer Nav */
-    document.getElementById("FT_Previous_HP").innerHTML = lang['FooterNav']['PastHome'];
-    document.getElementById("FT_Supporting_PG").innerHTML = lang['FooterNav']['SupportPrograms'];
-    document.getElementById("FT_Copy").innerHTML = lang['FooterNav']['Message'];
+    document.getElementById("FT_Previous_HP").innerHTML = encode(lang['FooterNav']['PastHome']);
+    document.getElementById("FT_Supporting_PG").innerHTML = encode(lang['FooterNav']['SupportPrograms']);
+    document.getElementById("FT_Copy").innerHTML = encode(lang['FooterNav']['Message']);
 }
 
 function OpenWindowsGuide() {
     let OWG_lang = Input_Lang_Change(ReturnCurrentLang());
 
     Swal.mixin({
-        confirmButtonText: OWG_lang['SweetAlert2']['DownloadWindows']['NextButton'],
+        confirmButtonText: encode(OWG_lang['SweetAlert2']['DownloadWindows']['NextButton']),
         showCancelButton: false,
         focusConfirm: false,
         progressSteps: ['1', '2', '3', '4']
     }).queue([
         {
-            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][0]['Title'],
-            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][0]['HTML']
+            title: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][0]['Title']),
+            html: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][0]['HTML'])
         },
         {
-            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][1]['Title'],
-            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][1]['HTML']
+            title: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][1]['Title']),
+            html: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][1]['HTML'])
         },
         {
-            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][2]['Title'],
-            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][2]['HTML']
+            title: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][2]['Title']),
+            html: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][2]['HTML'])
         },
         {
-            title: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][3]['Title'],
-            html: OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][3]['HTML']
+            title: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][3]['Title']),
+            html: encode(OWG_lang['SweetAlert2']['DownloadWindows']['Pages'][3]['HTML'])
         }
     ]).then((result) => {
         if (result.value) {
             const answers = JSON.stringify(result.value);
             Swal.fire({
                 icon: 'success',
-                title: OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['Title'],
-                html: OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['HTML'],
-                confirmButtonText: OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['CloseButton']
+                title: encode(OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['Title']),
+                html: encode(OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['HTML']),
+                confirmButtonText: encode(OWG_lang['SweetAlert2']['DownloadWindows']['FinalPage']['CloseButton'])
             });
         }
     });
@@ -321,8 +321,8 @@ function OpenSupportPrograms() {
 
     Swal.fire({
         icon: 'info',
-        title: OSP_lang['SweetAlert2']['SupportPrograms']['Title'],
-        html: OSP_lang['SweetAlert2']['SupportPrograms']['HTML'],
+        title: encode(OSP_lang['SweetAlert2']['SupportPrograms']['Title']),
+        html: encode(OSP_lang['SweetAlert2']['SupportPrograms']['HTML']),
         showCloseButton: true,
         focusConfirm: false
     });
