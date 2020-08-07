@@ -275,6 +275,10 @@ function ConfirmLangChange(lang) {
     document.getElementById("FT_Previous_HP").innerHTML = lang['FooterNav']['PastHome'];
     document.getElementById("FT_Supporting_PG").innerHTML = lang['FooterNav']['SupportPrograms'];
     document.getElementById("FT_Copy").innerHTML = lang['FooterNav']['Message'];
+
+    // Show
+    document.getElementById('wait_wrap').style.display = "none";
+    document.getElementById('main_wrap').style.display = "block";
 }
 
 function OpenWindowsGuide() {
