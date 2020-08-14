@@ -137,11 +137,11 @@ function Input_Lang_Change(userlang) {
                 "Lists": [
                     {
                         "Title": "Aimple Execution",
-                        "Description": "No setup is required.<br />All you have to do is turn on Adobe programs and discords and discords."
+                        "Description": "No setup is required.<br />All you have to do is turn on Adobe programs and discords."
                     },
                     {
-                        "Title": "폭넓은 지원",
-                        "Description": "어도비 계열 프로그램이 아니더라도 개발자에게 프로그램 추가 건의만 하면 내부 검토 후 지원하는 프로그램으로 추가됩니다."
+                        "Title": "User-participating program",
+                        "Description": "If you make additional program suggestions to the developer, they will be registered as a support program after internal review."
                     },
                     {
                         "Title": "Open Source Project",
@@ -186,7 +186,7 @@ function Input_Lang_Change(userlang) {
                             "Title": "Download Installer",
                             "HTML": `
                                 <p style="word break: keep-all;"><b>Currently, Adobe Discord RPC does not support English translation.</b></p>
-                                <p style="word break: keep-all;"><b>The English version of the program will be released sometime in June 2020.</b></p>
+                                <p style="word break: keep-all;"><b>The English version of the program will be released sometime in Oct 2020.</b></p>
                                 <br>
                                 <p style="word-break: keep-all;">Download the latest version of the installation file from <a style="color: #20A6E7;" href="http://github.com/hwahyang1/Adobe-Discord-RPC/releases" target="_blank">Github Releases</a>.</p>
                                 <p style="word-break: keep-all;">If Github is slow down, you can download it through <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>.</p>
@@ -234,7 +234,7 @@ function ConfirmLangChange(lang) {
     $("#download-nav").html(`<div class="btn-2">${lang['HeaderNav']['Lang_Change']}</div>`);
         /* Download Button */
         if ( navigator.platform ) {
-            if ( navigator.platform.indexOf('Win') > -1 ) { // 윈도
+            if ( navigator.platform.indexOf('Win') > -1 ) { // Windows
                 $("#download-cover").html(`<a class="btn btn--primary btn-height-60" href="javascript:void(0);" OnClick="OpenWindowsGuide();">${lang['DownloadButton']['Windows']}</a>`);
             } else {
                 $("#download-cover").html(`<a href="javascript:void(0);" class="btn btn--disabled btn-height-60">${lang['DownloadButton']['Unsupported']}</a>`);
