@@ -154,12 +154,12 @@ function Input_Lang_Change(userlang) {
                 "Description": "Listen to the opinions of project participants and users here.<br />Would you like to include your story here? Please make an inquiry through SNS.",
                 "Lists": [
                     {
-                        "Descriptions": "2020년 3월 17일, '무언가를 만들고 싶다'라는 단순한 욕구에서 시작된 프로젝트에 이렇게 많은 분들께서 관심을 가져주실 줄은 몰랐습니다.<br />다가올 4.0버전은 틸토님과 함께 작업하여 Node.js로 언어를 변경 할 계획입니다.",
+                        "Descriptions": "It is a project that started on March 17, 2020, with a simple desire to make something.<br />However, contrary to my expectations, many people have been interested in this project, and it has been maintained so far.<br />Next 4.0 version will be changed to Node.js by working with Tilto.",
                         "AuthorName": "HwaHyang",
                         "AuthorIndicator": "Project Leader"
                     },
                     {
-                        "Descriptions": "처음에 화향님이 '나 이거 만들었다'라고 했을 땐 그저 '오 신기해'하고선 말았던 건데, 정신을 차려보니 끌려와 제가 직접 만들고 있더군요 (...)<br />모쪼록 오랜만에 재밌게 열정가득 만든 Adobe Discord RPC 많이많이 애용해주시고, 화향님하고 저 틸토도 기억해주세요 (_ _)",
+                        "Descriptions": "At first, when HwaHyang said, \"I made this (Project),\" I just said, \"Oh, it's amazing.\"<br />But when I woke up, I was dragged in and I was making it myself. (...)<br />Anyway, please use Adobe Discord RPC that I made fun after a long time, and don't forget me and HwaHyang (_ _)",
                         "AuthorName": "Tilto",
                         "AuthorIndicator": "Project Developer & Designer"
                     }
