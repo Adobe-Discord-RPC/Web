@@ -80,6 +80,9 @@ function Input_Lang_Change(userlang) {
                         {
                             "Title": "설치 프로그램 다운로드",
                             "HTML": `
+                                <p style="word-break: keep-all;">현재 최신 버전은 v3.5 입니다만, v3.5 버전은 설치 프로그램이 없는 관계로, v3.4를 설치한 다음 자체 업데이터로 업데이트를 하셔야 합니다.</p>
+                                <p style="word-break: keep-all;">이 창에서는 v3.5 업데이트의 과정까지를 모두 서술합니다.</p>
+                                <p></p>
                                 <p style="word-break: keep-all;"><a style="color: #20A6E7;" href="http://github.com/hwahyang1/Adobe-Discord-RPC/releases" target="_blank">Github Releases</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
                                 <p style="word-break: keep-all;">Github 다운 속도가 느릴 경우, <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>를 사용 할 수 있습니다.</p>
                                 <p style="word-break: keep-all;"><b>파일을 다운 받은 뒤에 아래의 버튼을 누릅니다.</b></p>`
@@ -91,10 +94,13 @@ function Input_Lang_Change(userlang) {
                                 <p style="word-break: keep-all;"><b>설치가 끝나면 아래의 버튼을 누릅니다.</b></p>`
                         },
                         {
-                            "Title": "프로그램 실행",
+                            "Title": "프로그램 업데이트",
                             "HTML": `
-                                <p style="word-break: keep-all;">바탕화면에 생성된 'Adobe Discord RPC 실행' 바로가기를 더블 클릭하여 프로그램을 실행시킵니다.</p>
-                                <p style="word-break: keep-all;"><b>바로가기를 실행하면 아래의 버튼을 누릅니다.</b></p>`
+                                <p style="word-break: keep-all;">바탕화면에 생성된 'Adobe Discord RPC 업데이트' 바로가기를 더블 클릭하여 프로그램을 실행시킵니다.</p>
+                                <p style="word-break: keep-all;">프로그램이 자동으로 v3.5 업데이트를 진행합니다.</p>
+                                <p style="word-break: keep-all;">설치가 완료되면 프로그램이 자동으로 실행됩니다.</p>
+                                <p style="word-break: keep-all;">문제가 생길 경우, 홈페이지 상단&하단의 SNS를 이용 해 주세요.</p>
+                                <p style="word-break: keep-all;"><b>설치가 끝나고 나면, 아래의 버튼을 누릅니다.</b></p>`
                         },
                         {
                             "Title": "시작 프로그램 관련 안내",
@@ -183,26 +189,30 @@ function Input_Lang_Change(userlang) {
                     "NextButton": "Next &rarr;",
                     "Pages": [
                         {
-                            "Title": "Download Installer",
+                            "Title": "Download Installer\n",
                             "HTML": `
-                                <p style="word break: keep-all;"><b>Currently, Adobe Discord RPC does not support English translation.</b></p>
-                                <p style="word break: keep-all;"><b>The English version of the program will be released sometime in Oct 2020.</b></p>
-                                <br>
+                                <p style="word-break: keep-all;">The latest version, v3.5, partially supports English, but this guide guides you through v3.4, the non-English version.</p>
+                                <p style="word-break: keep-all;">(The current installation method is to install v3.4 and update to v3.5.)</p>
+                                <p style="word-break: keep-all;">If you can't proceed with the installation because you can't read Korean, please contact SNS.</p>
+                                <p></p>
                                 <p style="word-break: keep-all;">Download the latest version of the installation file from <a style="color: #20A6E7;" href="http://github.com/hwahyang1/Adobe-Discord-RPC/releases" target="_blank">Github Releases</a>.</p>
                                 <p style="word-break: keep-all;">If Github is slow down, you can download it through <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>.</p>
                                 <p style="word-break: keep-all;"><b>After downloading the file, press the button below.</b></p>`
                         },
                         {
-                            "Title": "Proceeding through the installation process",
+                            "Title": "Proceeding through the installation process\n",
                             "HTML": `
                                 <p style="word-break: keep-all;">Run the downloaded installation file to proceed with the installation process.</p>
                                 <p style="word-break: keep-all;"><b>Press the button below when the installation is complete.</b></p>`
                         },
                         {
-                            "Title": "Program Execution",
+                            "Title": "Program Update",
                             "HTML": `
-                                <p style="word-break: keep-all;">Double-click the 'Run Adobe Discord RPC' shortcut created on your desktop to run the program.</p>
-                                <p style="word-break: keep-all;"><b>When you launch the shortcut, press the button below.</b></p>`
+                                <p style="word-break: keep-all;">Double-click the 'Adobe Discord RPC 업데이트' shortcut created on your desktop to launch the program.</p>
+                                <p style="word-break: keep-all;">The program will automatically update v3.5.</p>
+                                <p style="word-break: keep-all;">When the installation is complete, the program runs automatically.</p>
+                                <p style="word-break: keep-all;">If you have a problem, please use SNS at the top and bottom of the homepage.</p>
+                                <p style="word-break: keep-all;"><b>Once the installation is complete, press the button below.</b></p>`
                         },
                         {
                             "Title": "'Startup Program' Guide",
