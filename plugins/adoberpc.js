@@ -14,8 +14,7 @@ function Input_Lang_Change(userlang) {
                 "PastHome": "기존 홈페이지",
                 "SupportPrograms": "지원 프로그램 목록",
                 "Github": "깃허브",
-                "Facebook": "페이스북",
-                "Twitter": "트위터",
+                "Discord": "디스코드",
                 "Lang_Change": "<a href=\"javascript:void(0);\" Onclick=\"ConfirmLangChange(Input_Lang_Change('en-US'))\" id=\"LangChange\">English</a>"
             },
             "DownloadButton": {
@@ -64,7 +63,8 @@ function Input_Lang_Change(userlang) {
             "FooterNav": {
                 "PastHome": "기존 홈페이지",
                 "SupportPrograms": "지원 프로그램 목록",
-                "Message": "©2020 Adobe Discord RPC. All right reserved.<br />해당 프로젝트는 오픈소스 프로젝트이며, Discord. Inc, Adobe를 포함한 모든 기업과는 별개의 서드파티 플러그인임을 알립니다."
+                "Discord": "디스코드",
+                "Message": "© 2020-2021 Adobe Discord RPC. 모든 권리 보유.<br />해당 프로젝트는 오픈소스 프로젝트이며, Discord. Inc, Adobe를 포함한 모든 기업과는 별개의 서드파티 플러그인임을 알립니다."
             },
             "SweetAlert2": {
                 "SupportPrograms": {
@@ -80,10 +80,10 @@ function Input_Lang_Change(userlang) {
                         {
                             "Title": "설치 프로그램 다운로드",
                             "HTML": `
-                                <p style="word-break: keep-all;">현재 최신 버전은 v3.5 입니다만, v3.5 버전은 설치 프로그램이 없는 관계로, v3.4를 설치한 다음 자체 업데이터로 업데이트를 하셔야 합니다.</p>
-                                <p style="word-break: keep-all;">이 창에서는 v3.5 업데이트의 과정까지를 모두 서술합니다.</p>
+                                <p style="word-break: keep-all;">현재 최신 버전은 v3.7 입니다만, v3.7 버전은 설치 프로그램이 없는 관계로, v3.4를 설치한 다음 자체 업데이터로 업데이트를 하셔야 합니다.</p>
+                                <p style="word-break: keep-all;">이 창에서는 v3.7 업데이트의 과정까지를 모두 서술합니다.</p>
                                 <p></p>
-                                <p style="word-break: keep-all;"><a style="color: #20A6E7;" href="http://github.com/hwahyang1/Adobe-Discord-RPC/releases" target="_blank">Github Releases</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
+                                <p style="word-break: keep-all;"><a style="color: #20A6E7;" href="http://github.com/Adobe-Discord-RPC/Adobe-Discord-RPC-Old/releases" target="_blank">Github Releases</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
                                 <p style="word-break: keep-all;">Github 다운 속도가 느릴 경우, <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>를 사용 할 수 있습니다.</p>
                                 <p style="word-break: keep-all;"><b>파일을 다운 받은 뒤에 아래의 버튼을 누릅니다.</b></p>`
                         },
@@ -97,7 +97,7 @@ function Input_Lang_Change(userlang) {
                             "Title": "프로그램 업데이트",
                             "HTML": `
                                 <p style="word-break: keep-all;">바탕화면에 생성된 'Adobe Discord RPC 업데이트' 바로가기를 더블 클릭하여 프로그램을 실행시킵니다.</p>
-                                <p style="word-break: keep-all;">프로그램이 자동으로 v3.5 업데이트를 진행합니다.</p>
+                                <p style="word-break: keep-all;">프로그램이 자동으로 v3.7 업데이트를 진행합니다.</p>
                                 <p style="word-break: keep-all;">설치가 완료되면 프로그램이 자동으로 실행됩니다.</p>
                                 <p style="word-break: keep-all;">문제가 생길 경우, 홈페이지 상단&하단의 SNS를 이용 해 주세요.</p>
                                 <p style="word-break: keep-all;"><b>설치가 끝나고 나면, 아래의 버튼을 누릅니다.</b></p>`
@@ -124,8 +124,7 @@ function Input_Lang_Change(userlang) {
                 "PastHome": "Previous Homepage",
                 "SupportPrograms": "Supporting Programs",
                 "Github": "Github",
-                "Facebook": "Facebook",
-                "Twitter": "Twitter",
+                "Discord": "Discord",
                 "Lang_Change": "<a href=\"javascript:void(0);\" Onclick=\"ConfirmLangChange(Input_Lang_Change('ko-KR'))\" id=\"LangChange\">Korean</a>"
             },
             "DownloadButton": {
@@ -174,16 +173,19 @@ function Input_Lang_Change(userlang) {
             "FooterNav": {
                 "PastHome": "Previous Homepage",
                 "SupportPrograms": "Supporting Programs",
-                "Message": "©2020 Adobe Discord RPC. All right reserved.<br />Notice that the project is an open source project and is a separate third-party plug-in from all companies, including Discord. Inc, Adobe."
+                "Discord": "Discord",
+                "Message": "© 2020-2021 Adobe Discord RPC. All right reserved.<br />Notice that the project is an open source project and is a separate third-party plug-in from all companies, including Discord. Inc, Adobe."
             },
             "SweetAlert2": {
                 "SupportPrograms": {
-                    "Title": "<h2 style=\"word-break: keep-all;\">Adobe Discord RPC Supporting Programs List</h2>",
+                    "Title": "<h2 style=\"word-break: keep-all;\">Adobe Discord RPC Supporting Programs List (Korean)</h2>",
                     "HTML": `
-                        <p style="word-break: keep-all;"><b>This list will be written in English after the English translation update.</b></p>
-                        <p style="word-break: keep-all;"><b>Adobe programs are supported only from CC 2014 to CC 2020.</b></p>
-                        <p style="word-break: keep-all;"><b>Other programs (C4D, Blender, etc.) support all versions in theory, but we recommend using the latest version if possible.</b></p>
-                        <img src="./image/Support_Program_Chart.png" alt="Supporting Programs List (KR)" />`
+                    <p style="word-break: keep-all;"><b>An update to the English translation has been made, but we have not yet translated the list due to our schedule problems.</b></p>
+                    <p style="word-break: keep-all;"><b>Sorry for the inconvenience. We will translate this list as soon as possible.</b></p>
+                    <p></p>
+                    <p style="word-break: keep-all;"><b>Adobe programs are supported only from CC 2014 to CC 2021.</b></p>
+                    <p style="word-break: keep-all;"><b>Other programs (C4D, Blender, etc.) support all versions in theory, but we recommend using the latest version if possible.</b></p>
+                    <img src="./image/Support_Program_Chart.png" alt="Supporting Programs List (KR)" />`
                 },
                 "DownloadWindows": {
                     "NextButton": "Next &rarr;",
@@ -191,11 +193,11 @@ function Input_Lang_Change(userlang) {
                         {
                             "Title": "Download Installer\n",
                             "HTML": `
-                                <p style="word-break: keep-all;">The latest version, v3.5, partially supports English, but this guide guides you through v3.4, the non-English version.</p>
-                                <p style="word-break: keep-all;">(The current installation method is to install v3.4 and update to v3.5.)</p>
-                                <p style="word-break: keep-all;">If you can't proceed with the installation because you can't read Korean, please contact SNS.</p>
+                                <p style="word-break: keep-all;">The latest version, v3.7, partially supports English, but this guide guides you through v3.4, the non-English version.</p>
+                                <p style="word-break: keep-all;">(The current installation method is to install v3.4 and update to v3.7.)</p>
+                                <p style="word-break: keep-all;">If you can't proceed with the installation because you can't read Korean, please contact through Discord.</p>
                                 <p></p>
-                                <p style="word-break: keep-all;">Download the latest version of the installation file from <a style="color: #20A6E7;" href="http://github.com/hwahyang1/Adobe-Discord-RPC/releases" target="_blank">Github Releases</a>.</p>
+                                <p style="word-break: keep-all;">Download the latest version of the installation file from <a style="color: #20A6E7;" href="http://github.com/Adobe-Discord-RPC/Adobe-Discord-RPC-Old/releases" target="_blank">Github Releases</a>.</p>
                                 <p style="word-break: keep-all;">If Github is slow down, you can download it through <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>.</p>
                                 <p style="word-break: keep-all;"><b>After downloading the file, press the button below.</b></p>`
                         },
@@ -209,7 +211,7 @@ function Input_Lang_Change(userlang) {
                             "Title": "Program Update",
                             "HTML": `
                                 <p style="word-break: keep-all;">Double-click the 'Adobe Discord RPC 업데이트' shortcut created on your desktop to launch the program.</p>
-                                <p style="word-break: keep-all;">The program will automatically update v3.5.</p>
+                                <p style="word-break: keep-all;">The program will automatically update v3.7.</p>
                                 <p style="word-break: keep-all;">When the installation is complete, the program runs automatically.</p>
                                 <p style="word-break: keep-all;">If you have a problem, please use SNS at the top and bottom of the homepage.</p>
                                 <p style="word-break: keep-all;"><b>Once the installation is complete, press the button below.</b></p>`
@@ -239,8 +241,7 @@ function ConfirmLangChange(lang) {
     document.getElementById("HD_Previous_HP").innerHTML = `<a href="./v1">${lang['HeaderNav']['PastHome']}</a>`;
     document.getElementById("HD_Supporting_PG").innerHTML = `<a href="javascript:void(0);" OnClick="OpenSupportPrograms();">${lang['HeaderNav']['SupportPrograms']}</a>`;
     document.getElementById("HD_Github").innerHTML = `<a href="http://github.com/Adobe-Discord-RPC/">${lang['HeaderNav']['Github']}</a>`;
-    document.getElementById("HD_Facebook").innerHTML = `<a href="http://www.facebook.com/adobediscordrpc/">${lang['HeaderNav']['Facebook']}</a>`;
-    document.getElementById("HD_Twitter").innerHTML = `<a href="http://twitter.com/adobediscordrpc">${lang['HeaderNav']['Twitter']}</a>`;
+    document.getElementById("HD_Discord").innerHTML = `<a href="http://discord.gg/7MBYbERafX">${lang['HeaderNav']['Facebook']}</a>`;
     $("#download-nav").html(`<div class="btn-2">${lang['HeaderNav']['Lang_Change']}</div>`);
         /* Download Button */
         if ( navigator.platform ) {
@@ -284,6 +285,7 @@ function ConfirmLangChange(lang) {
     /* Footer Nav */
     document.getElementById("FT_Previous_HP").innerHTML = lang['FooterNav']['PastHome'];
     document.getElementById("FT_Supporting_PG").innerHTML = lang['FooterNav']['SupportPrograms'];
+    document.getElementById("FT_Discord").innerHTML = lang['FooterNav']['Discord'];
     document.getElementById("FT_Copy").innerHTML = lang['FooterNav']['Message'];
 
     // Show
