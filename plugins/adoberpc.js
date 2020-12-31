@@ -241,7 +241,7 @@ function ConfirmLangChange(lang) {
     document.getElementById("HD_Previous_HP").innerHTML = `<a href="./v1">${lang['HeaderNav']['PastHome']}</a>`;
     document.getElementById("HD_Supporting_PG").innerHTML = `<a href="javascript:void(0);" OnClick="OpenSupportPrograms();">${lang['HeaderNav']['SupportPrograms']}</a>`;
     document.getElementById("HD_Github").innerHTML = `<a href="http://github.com/Adobe-Discord-RPC/">${lang['HeaderNav']['Github']}</a>`;
-    document.getElementById("HD_Discord").innerHTML = `<a href="http://discord.gg/7MBYbERafX">${lang['HeaderNav']['Facebook']}</a>`;
+    document.getElementById("HD_Discord").innerHTML = `<a href="http://discord.gg/7MBYbERafX">${lang['HeaderNav']['Discord']}</a>`;
     $("#download-nav").html(`<div class="btn-2">${lang['HeaderNav']['Lang_Change']}</div>`);
         /* Download Button */
         if ( navigator.platform ) {
