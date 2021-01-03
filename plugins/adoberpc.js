@@ -99,7 +99,7 @@ function Input_Lang_Change(userlang) {
                                 <p style="word-break: keep-all;">바탕화면에 생성된 'Adobe Discord RPC 업데이트' 바로가기를 더블 클릭하여 프로그램을 실행시킵니다.</p>
                                 <p style="word-break: keep-all;">프로그램이 자동으로 v3.7 업데이트를 진행합니다.</p>
                                 <p style="word-break: keep-all;">설치가 완료되면 프로그램이 자동으로 실행됩니다.</p>
-                                <p style="word-break: keep-all;">문제가 생길 경우, 홈페이지 상단&하단의 SNS를 이용 해 주세요.</p>
+                                <p style="word-break: keep-all;">문제가 있을 경우, 홈페이지 상단&하단에 위치한 디스코드 서버를 이용 해 주세요.</p>
                                 <p style="word-break: keep-all;"><b>설치가 끝나고 나면, 아래의 버튼을 누릅니다.</b></p>`
                         },
                         {
@@ -213,14 +213,14 @@ function Input_Lang_Change(userlang) {
                                 <p style="word-break: keep-all;">Double-click the 'Adobe Discord RPC 업데이트' shortcut created on your desktop to launch the program.</p>
                                 <p style="word-break: keep-all;">The program will automatically update v3.7.</p>
                                 <p style="word-break: keep-all;">When the installation is complete, the program runs automatically.</p>
-                                <p style="word-break: keep-all;">If you have a problem, please use SNS at the top and bottom of the homepage.</p>
+                                <p style="word-break: keep-all;">If you have a problem, please use Discord Button at the top and bottom of the homepage.</p>
                                 <p style="word-break: keep-all;"><b>Once the installation is complete, press the button below.</b></p>`
                         },
                         {
                             "Title": "'Startup Program' Guide",
                             "HTML": `
                                 <p style="word-break: keep-all;">The program is registered in the "Startup Program" and will work with Windows startup.</p>
-                                <p style="word-break: keep-all;">If you don't want this, press Win + R to enter 'shell:startup', then delete the Run Adobe Discord RPC' shortcut.</p>
+                                <p style="word-break: keep-all;">If you don't want this, press Win + R to enter 'shell:startup', then delete the 'Run Adobe Discord RPC' shortcut.</p>
                                 <p style="word-break: keep-all;"><b>After reading it, press the button below.</b></p>`
                         }
                     ],
