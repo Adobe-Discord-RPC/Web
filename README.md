@@ -16,8 +16,28 @@
 
 ※ 실제 웹사이트는 별도의 서버에서 가동되며, 이에 따라 본 레포지토리와 내용이 상이할 수 있습니다.
 
+---
+
+개발 : [화향](https://hwahyang.space)
+
+웹 디자인 (구버전) : [화향](https://hwahyang.space) (템플릿 : [Materialize](https://materializecss.com/))
+
+웹 디자인 (신버전) : [화향](https://hwahyang.space) (템플릿 : [uxtheme.net](https://uxtheme.net))
+
+UI 디자인 : [화향](https://hwahyang.space), [틸토](https://tilto.kro.kr)
+
 ## En
 
 This is a file on the [Adobe Discord RPC website](https://adoberpc.hwahyang.space).
 
 ※ The actual website is operated on a separate server, and the contents may be different from this Repository accordingly.
+
+---
+
+Develop by. [HwaHyang](https://hwahyang.space)
+
+Web Design (Old) by. [HwaHyang](https://hwahyang.space) (Template : [Materialize](https://materializecss.com/))
+
+Web Design (New) by. [HwaHyang](https://hwahyang.space) (Template : [uxtheme.net](https://uxtheme.net))
+
+UI Design by. [HwaHyang](https://hwahyang.space), [Tilto](https://tilto.kro.kr)
