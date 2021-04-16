@@ -27,7 +27,7 @@
     <meta name="description" content="Discord RPC in Adobe Programs." class="meta-desc">
     <!--<meta name="keywords" content="">-->
     <meta name="apple-mobile-web-app-title" content="Adobe Discord RPC">
-    <link rel="image_src" href="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/192_192_icon_alpha.png"> <!-- 192X192 -->
+    <link rel="image_src" href="https://adoberpc.hwahyang.space/favicon/192_192_icon_alpha.png"> <!-- 192X192 -->
 
     <!-- SNS -->
       <!-- 페이스북 & 디스코드 -->
@@ -36,8 +36,8 @@
       <meta property="og:description" content="Discord RPC in Adobe Programs." class="meta-desc">
       <meta property="og:type" content="website">
       <meta property="og:locale" content="KR">
-      <meta property="og:url" content="http://adoberpc.hwahyang.space">
-      <meta property="og:image" content="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/200_200_icon_alpha.png">
+      <meta property="og:url" content="https://adoberpc.hwahyang.space">
+      <meta property="og:image" content="https://adoberpc.hwahyang.space/favicon/200_200_icon_alpha.png">
       <meta property="og:image:width" content="200">
       <meta property="og:image:height" content="200">
 
@@ -45,12 +45,12 @@
       <meta name="twitter:card" content="summary">
       <meta name="twitter:title" content="Adobe Discord RPC" class="meta-title">
       <meta name="twitter:description" content="Discord RPC in Adobe Programs." class="meta-desc">
-      <meta name="twitter:url" content="http://adoberpc.hwahyang.space">
-      <meta name="twitter:image" content="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/200_200_icon_alpha.png"> <!-- 200X200 -->
+      <meta name="twitter:url" content="https://adoberpc.hwahyang.space">
+      <meta name="twitter:image" content="https://adoberpc.hwahyang.space/favicon/200_200_icon_alpha.png"> <!-- 200X200 -->
 
       <!-- MS -->
       <meta name="msapplication-TileColor" content="#C5CAE9">
-      <meta name="msapplication-TileImage" content="http://adobe-discord-rpc-homepage.firebaseapp.com/favicon/144_144_icon_alpha.png"> <!-- 144X144 -->
+      <meta name="msapplication-TileImage" content="https://adoberpc.hwahyang.space/favicon/144_144_icon_alpha.png"> <!-- 144X144 -->
     <!-- //SNS -->
 
     <!-- 자동 태깅 방지 -->
@@ -105,32 +105,49 @@
                 <h5 class="center">* Contact *</h5>
                 <ul class="center">
                   <li>E-mail : <a href="mailto:me@hwahyang.space">me@hwahyang.space</a></li>
-                  <li>Discord : <a href="http://invite.gg/7MBYbERafX" target="_blank">Adobe Discord RPC</a></li>
-                  <li>Twitter : <a href="http://twitter.com/adobediscordrpc" target="_blank">@adobediscordrpc</a></li>
-                  <li>Facebook : <a href="http://www.facebook.com/adobediscordrpc/" target="_blank">Adobe Discord RPC</a></li>
+                  <li>Discord : <a href="http://discord.gg/7MBYbERafX" target="_blank">Adobe Discord RPC</a></li>
+                  <li>Twitter : <a href="http://twitter.com/adobediscordrpc" target="_blank">@adobediscordrpc</a> (해당 계정으로 문의를 받지 않습니다)</li>
+                  <li>Facebook : <a href="http://www.facebook.com/adobediscordrpc/" target="_blank">Adobe Discord RPC</a> (해당 계정으로 문의를 받지 않습니다)</li>
                 </ul>
                 <br />
-                <script>
+
+                <!--<script>
                   var filter = "win16|win32|win64|mac|macintel";
                   if ( navigator.platform ) {
                     if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { // 모바일
                       document.write(`<div class="center"><a class="light-green-text text-lighten-2" href="./story.html">개발 이야기</a></div>`);
                     }
                   }
-                </script>
+                </script>-->
+                <div class="center" id="mobile_StoryTab" style="display: none;">
+                  <a class="light-green-text text-lighten-2" href="./story.html">개발 이야기</a>
+                </div>
+
               </div>
-              <div class="card-action">
+
+              <!--<div class="card-action">
                 <script>
                   var filter = "win16|win32|win64|mac|macintel";
                   if ( navigator.platform ) {
                     if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { // 모바일
-                      document.write(`<center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://github.com/hwahyang1/Adobe-Discord-RPC/">Github</a></center>`);
+                      document.write(`<center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://github.com/Adobe-Discord-RPC/">Github</a></center>`);
                     } else {
-                      document.write(`<a class="light-green-text text-lighten-2" href="./story.html">개발 이야기</a><div class="right"><a href="http://github.com/hwahyang1/Adobe-Discord-RPC/">Github</a><a class="indigo-text text-lighten-2 modal-trigger" href="javascript:void(0);" data-target="download_modal">Windows 다운로드</a></div>`);
+                      document.write(`<a class="light-green-text text-lighten-2" href="./story.html">개발 이야기</a><div class="right"><a href="http://github.com/Adobe-Discord-RPC/">Github</a><a class="indigo-text text-lighten-2 modal-trigger" href="javascript:void(0);" data-target="download_modal">Windows 다운로드</a></div>`);
                     }
                   }
                 </script>
+              </div>-->
+              <div class="card-action" id="pc_ActionTab" style="display: none;">
+                <a class="light-green-text text-lighten-2" href="./story.html">개발 이야기</a>
+                <div class="right">
+                  <a href="http://github.com/Adobe-Discord-RPC/">Github</a>
+                  <a class="indigo-text text-lighten-2 modal-trigger" href="javascript:void(0);" data-target="download_modal">Windows 다운로드</a>
+                </div>
               </div>
+              <div class="card-action" id="mobile_ActionTab" style="display: none;">
+                <center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://github.com/Adobe-Discord-RPC/">Github</a></center>
+              </div>
+
             </div>
           </div>
         </div>
@@ -143,13 +160,13 @@
       <div class="modal-content">
         <h4>Adobe Discord RPC 다운로드 가이드</h4>
         <hr /><br />
-        <p>해당 페이지는 <b>구버전 페이지</b>이며, <u>최신 버전과 설치 방법이 상이</u>할 수 있습니다.</p>
-        <p>정확한 설치 방법은 <a href="./../" target="_blank">신버전 페이지</a>를 참고 해 주세요.</p>
-        <br /><hr /><br />
+        <p>해당 페이지는 <b>구버전 페이지</b> 입니다.</p>
+        <p>프로그램 설치 방법은 <a href="/" target="_blank">신버전 페이지</a>를 참고 해 주세요.</p>
+        <!--<br /><hr /><br />
         <p><a href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">구글 드라이브</a>나 <a href="http://github.com/Adobe-Discord-RPC/Releases/releases" target="_blank">Github</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
         <br />
-        <!--<p>다음과 같이 화면이 뜨면 설치 언어를 선택합니다. 일반적으로 시스템 언어로 설정되어 있습니다.</p>
-        <img src="./images/installation.png" alt="Installer Screenshot" />-->
+        <!-<p>다음과 같이 화면이 뜨면 설치 언어를 선택합니다. 일반적으로 시스템 언어로 설정되어 있습니다.</p>
+        <img src="./images/installation.png" alt="Installer Screenshot" />->
         <p>다운받은 후, 프로그램의 설치 과정을 따라 설치를 진행하시면 됩니다.</p>
         <br />
         <p>설치가 끝난 후, 지원되는 프로그램을 실행하시면 다음과 같은 알림이 뜨며 RPC가 적용됩니다.</p>
@@ -162,11 +179,11 @@
         <p>
           <ul>
             <li>E-mail : <a href="mailto:me@hwahyang.space">me@hwahyang.space</a></li>
-            <li>Discord : <a href="http://invite.gg/7MBYbERafX" target="_blank">Adobe Discord RPC</a></li>
-            <li>Twitter : <a href="http://twitter.com/adobediscordrpc" target="_blank">@adobediscordrpc</a></li>
-            <li>Facebook : <a href="http://www.facebook.com/adobediscordrpc/" target="_blank">Adobe Discord RPC</a></li>
+            <li>Discord : <a href="http://discord.gg/7MBYbERafX" target="_blank">Adobe Discord RPC</a></li>
+            <li>Twitter : <a href="http://twitter.com/adobediscordrpc" target="_blank">@adobediscordrpc</a> (해당 계정으로 문의를 받지 않습니다)</li>
+            <li>Facebook : <a href="http://www.facebook.com/adobediscordrpc/" target="_blank">Adobe Discord RPC</a> (해당 계정으로 문의를 받지 않습니다)</li>
           </ul>
-        </p>
+        </p>-->
       </div>
       <div class="modal-footer">
         <a href="javascript:void(0);" class="modal-close waves-effect waves-green btn-flat">팝업 닫기</a>
@@ -182,6 +199,16 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $('.modal').modal();
+
+        var filter = "win16|win32|win64|mac|macintel";
+        if ( navigator.platform ) {
+          if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) { // 모바일
+            mobile_StoryTab.style.display = 'block';
+            mobile_ActionTab.style.display = 'block';
+          } else {
+            pc_ActionTab.style.display = 'block';
+          }
+        }
       });
     </script>
   </body>

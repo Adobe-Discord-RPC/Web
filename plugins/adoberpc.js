@@ -15,7 +15,7 @@ function Input_Lang_Change(userlang) {
                 "SupportPrograms": "지원 프로그램 목록",
                 "Github": "깃허브",
                 "Discord": "디스코드",
-                "Lang_Change": "<a href=\"javascript:void(0);\" Onclick=\"ConfirmLangChange(Input_Lang_Change('en-US'))\" id=\"LangChange\">English</a>"
+                "Lang_Change": "<div class=\"btn-2\" Onclick=\"ConfirmLangChange(Input_Lang_Change('en-US'))\"><a href=\"javascript:void(0);\" id=\"LangChange\">English</a></div>"
             },
             "DownloadButton": {
                 "Unsupported": "지원하지 않는 OS",
@@ -80,11 +80,11 @@ function Input_Lang_Change(userlang) {
                         {
                             "Title": "설치 프로그램 다운로드",
                             "HTML": `
-                                <p style="word-break: keep-all;">현재 최신 버전은 v3.7 입니다만, v3.7 버전은 설치 프로그램이 없는 관계로, v3.4를 설치한 다음 자체 업데이터로 업데이트를 하셔야 합니다.</p>
+                                <p style="word-break: keep-all;">현재 최신 버전은 v3.7 입니다만, v3.7 버전은 설치 프로그램이 없는 관계로, <b>v3.4를 설치한 다음 자체 업데이터로 업데이트</b>를 하셔야 합니다.</p>
                                 <p style="word-break: keep-all;">이 창에서는 v3.7 업데이트의 과정까지를 모두 서술합니다.</p>
                                 <p></p>
-                                <p style="word-break: keep-all;"><a style="color: #20A6E7;" href="http://github.com/Adobe-Discord-RPC/Adobe-Discord-RPC-Old/releases" target="_blank">Github Releases</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
-                                <p style="word-break: keep-all;">Github 다운 속도가 느릴 경우, <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>를 사용 할 수 있습니다.</p>
+                                <p style="word-break: keep-all;"><a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>에서 최신 버전의 설치 파일을 다운받습니다.</p>
+                                <p style="word-break: keep-all;">원하실 경우, <a style="color: #20A6E7;" href="http://github.com/Adobe-Discord-RPC/Adobe-Discord-RPC-Old/releases" target="_blank">Github Releases</a> 또한 사용 하실 수 있습니다.</p>
                                 <p style="word-break: keep-all;"><b>파일을 다운 받은 뒤에 아래의 버튼을 누릅니다.</b></p>`
                         },
                         {
@@ -125,7 +125,7 @@ function Input_Lang_Change(userlang) {
                 "SupportPrograms": "Supporting Programs",
                 "Github": "Github",
                 "Discord": "Discord",
-                "Lang_Change": "<a href=\"javascript:void(0);\" Onclick=\"ConfirmLangChange(Input_Lang_Change('ko-KR'))\" id=\"LangChange\">Korean</a>"
+                "Lang_Change": "<div class=\"btn-2\" Onclick=\"ConfirmLangChange(Input_Lang_Change('ko-KR'))\"><a href=\"javascript:void(0);\" id=\"LangChange\">Korean</a></div>"
             },
             "DownloadButton": {
                 "Unsupported": "Unsupported OS",
@@ -197,8 +197,8 @@ function Input_Lang_Change(userlang) {
                                 <p style="word-break: keep-all;">(The current installation method is to install v3.4 and update to v3.7.)</p>
                                 <p style="word-break: keep-all;">If you can't proceed with the installation because you can't read Korean, please contact through Discord.</p>
                                 <p></p>
-                                <p style="word-break: keep-all;">Download the latest version of the installation file from <a style="color: #20A6E7;" href="http://github.com/Adobe-Discord-RPC/Adobe-Discord-RPC-Old/releases" target="_blank">Github Releases</a>.</p>
-                                <p style="word-break: keep-all;">If Github is slow down, you can download it through <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>.</p>
+                                <p style="word-break: keep-all;">Download the latest version of the installation file from <a style="color: #20A6E7;" href="http://drive.google.com/open?id=1iRO8PjsP2POtiOx8smemaWGaG59LvDa2" target="_blank">Google Drive</a>.</p>
+                                <p style="word-break: keep-all;">If You want, you can download it through <a style="color: #20A6E7;" href="http://github.com/Adobe-Discord-RPC/Adobe-Discord-RPC-Old/releases" target="_blank">Github Releases</a>.</p>
                                 <p style="word-break: keep-all;"><b>After downloading the file, press the button below.</b></p>`
                         },
                         {
@@ -242,15 +242,15 @@ function ConfirmLangChange(lang) {
     document.getElementById("HD_Supporting_PG").innerHTML = `<a href="javascript:void(0);" OnClick="OpenSupportPrograms();">${lang['HeaderNav']['SupportPrograms']}</a>`;
     document.getElementById("HD_Github").innerHTML = `<a href="http://github.com/Adobe-Discord-RPC/">${lang['HeaderNav']['Github']}</a>`;
     document.getElementById("HD_Discord").innerHTML = `<a href="http://discord.gg/7MBYbERafX">${lang['HeaderNav']['Discord']}</a>`;
-    $("#download-nav").html(`<div class="btn-2">${lang['HeaderNav']['Lang_Change']}</div>`);
-        /* Download Button */
-        if ( navigator.platform ) {
-            if ( navigator.platform.indexOf('Win') > -1 ) { // Windows
-                $("#download-cover").html(`<a class="btn btn--primary btn-height-60" href="javascript:void(0);" OnClick="OpenWindowsGuide();">${lang['DownloadButton']['Windows']}</a>`);
-            } else {
-                $("#download-cover").html(`<a href="javascript:void(0);" class="btn btn--disabled btn-height-60">${lang['DownloadButton']['Unsupported']}</a>`);
-            }
+    $("#download-nav").html(lang['HeaderNav']['Lang_Change']);
+    /* Download Button */
+    if ( navigator.platform ) {
+        if ( navigator.platform.indexOf('Win') > -1 ) { // Windows
+            $("#download-cover").html(`<a class="btn btn--primary btn-height-60" href="javascript:void(0);" OnClick="OpenWindowsGuide();">${lang['DownloadButton']['Windows']}</a>`);
+        } else {
+            $("#download-cover").html(`<a href="javascript:void(0);" class="btn btn--disabled btn-height-60">${lang['DownloadButton']['Unsupported']}</a>`);
         }
+    }
 
     /* Cover */
     $("#CV_Title").html(`<h1 class="main-title" style="word-break: keep-all;" id="CV_Title">${lang['Cover']['Title']}</h1>`);
